@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    background: url(../images/logo_header.png) no-repeat;
+    width: 272px;
+    height: 385px;
+    text-indent: -9999px;
+    margin: 0 auto;
+}
+
+.contador {
+    font-size: 5rem;
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
