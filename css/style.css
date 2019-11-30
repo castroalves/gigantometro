@@ -1,6 +1,15 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
     color: white;
+    text-emphasis: center;
 }
 
 .logo {
@@ -12,8 +21,59 @@ body {
 }
 
 .contador {
-    font-size: 5rem;
+    font-size: 2rem;
     margin: 0 auto;
-    width: 600px;
+    max-width: 100%;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.contador .total {
+    font-size: 8rem;
+}
+
+.update {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    .contador {
+        font-size: 2rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contador .total {
+        font-size: 6rem;
+        display: block;
+    }
+
+}
+  
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    .contador {
+        font-size: 2rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contador .total {
+        font-size: 6rem;
+        display: block;
+    }
+
 }

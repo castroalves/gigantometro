@@ -13,7 +13,21 @@ const GIGANTOMETRO = (() => {
     };
 
     const init = () => {
+
+        // Carrega primeira contagem
         contaSocios();
+        
+        // Atualiza a cada 10 segundos
+        setInterval(() => {
+            let segundos = parseInt(document.querySelector('.segundos').textContent);
+            if (segundos > 0) {
+                document.querySelector('.segundos').textContent -= 1;
+            } else {
+                contaSocios();
+                document.querySelector('.segundos').textContent = 10;
+            }
+            
+        }, 1000);
     };
 
     Number.prototype.format = function() {
