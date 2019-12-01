@@ -13,9 +13,9 @@ body {
 }
 
 .logo {
-    background: url(../images/logo_header.png) no-repeat;
-    width: 272px;
-    height: 385px;
+    background: url(../images/logo_header.png) no-repeat center center;
+    background-size: contain;
+    height: 300px;
     text-indent: -9999px;
     margin: 0 auto;
 }
@@ -32,10 +32,32 @@ body {
     font-size: 8rem;
 }
 
+.botao {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: center;
+}
+
+.botao a {
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.botao a:hover,
+.botao a:focus {
+    background-color: #ff3737;
+    box-shadow: 0 0px 10px 0 rgba(255, 0, 0, 0.9);
+}
+
 .update {
     max-width: 100%;
     text-align: center;
-    margin-top: 1rem;
 }
 
 /* 
