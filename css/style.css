@@ -60,6 +60,12 @@ body {
     text-align: center;
 }
 
+.share {
+    text-align: center;
+    line-height: 11px;
+    margin-top: 20px;
+}
+
 /* 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
